@@ -95,7 +95,7 @@ export default function ContactForm({ locale = 'en' }: { locale?: 'en' | 'es' })
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors"
+          className="w-full bg-black text-white py-3 px-6 rounded-lg font-semibold hover:bg-purple-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors"
         >
           {isSubmitting ? text.submitting : text.submit}
         </button>

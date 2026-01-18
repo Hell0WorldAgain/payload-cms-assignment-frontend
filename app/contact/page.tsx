@@ -8,8 +8,8 @@ export async function generateMetadata(): Promise<Metadata> {
   const page = await getPage('contact', 'en');
   
   return {
-    title: page?.seo?.metaTitle || 'Contact Us',
-    description: page?.seo?.metaDescription || 'Get in touch with us',
+    title: page?.seo?.metaTitle || 'Contact Me',
+    description: page?.seo?.metaDescription || 'Get in touch with me',
   };
 }
 
@@ -20,13 +20,13 @@ export default async function ContactPage() {
     <div className="min-h-screen flex flex-col">
       <Navigation />
       <main className="flex-grow">
-        <div className="bg-gradient-to-br from-blue-600 to-purple-700 text-white py-16">
+        <div className="bg-gradient-to-br from-black-600 to-purple-700 text-white py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              {page?.title || 'Contact Us'}
+              {page?.title || 'Contact Me'}
             </h1>
             <p className="text-xl text-blue-100">
-              We'd love to hear from you. Send us a message!
+              I'd love to hear from you. Send us a message!
             </p>
           </div>
         </div>

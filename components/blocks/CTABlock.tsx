@@ -3,7 +3,7 @@ import { CTABlock as CTABlockType } from '@/types/payload';
 
 export default function CTABlock({ block }: { block: CTABlockType }) {
   return (
-    <div className="py-16 md:py-24 bg-gradient-to-r from-blue-600 to-purple-600">
+    <div className="py-16 md:py-24 bg-gradient-to-r from-black-600 to-purple-600">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
           {block.heading}
